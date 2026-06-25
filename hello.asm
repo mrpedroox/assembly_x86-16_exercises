@@ -1,5 +1,5 @@
 org 0x7c00
-16 bits
+bits 16
 
 mov ax, 0
 mov ds, ax
