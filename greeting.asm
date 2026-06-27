@@ -53,9 +53,9 @@ getname:
 fim: 
     mov byte [si], 0    ;   puts 0 to finish the string
     mov ah, 0x0e
-    mov al, 13      ;   \n  
-    int 0x10        ;   prints \n
-    mov al, 10      ;   move to the beggining of the line
+    mov al, 13      ;   move to the beggining of the line 
+    int 0x10        
+    mov al, 10      ;   goes down a line
     int 0x10
     pop bx
     pop ax
