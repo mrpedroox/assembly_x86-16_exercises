@@ -51,6 +51,8 @@ getnum:             ; Receita 3: Lê inteiro do teclado [4]
     int 0x16        ; Lê tecla [8]
     cmp al, 13      ; É Enter? [9]
     je .e
+    mov ah, 0x0e
+    int 0x10
     mov cl, al
     mov ax, bx
     mov dx, 10
